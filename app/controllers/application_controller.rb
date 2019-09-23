@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
-  include JSONAPI:ActsAsResourceController
+  include JSONAPI::ActsAsResourceController
 
-  protect_from_forgery with: :exception
+  # protect_from_forgery with: :exception
+  protect_from_forgery with: :null_session
 end
