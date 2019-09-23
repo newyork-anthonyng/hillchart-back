@@ -1,5 +1,17 @@
 {
   "name": "hillchart-back",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
